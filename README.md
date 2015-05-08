@@ -31,8 +31,12 @@ npm install
 gulp concat:allCSS
 ```
 
+これで、順序関係なく結合された[css/style.css](https://github.com/geckotang/concat-css-example/blob/master/css/style.css)が生成されます。
+
 ### css/srcディレクトリ以下のCSSファイルを、gulpfile.js内の指定した順で結合する
 
 ```sh
 gulp concat:sortedCSS
 ```
+
+これで、指定した順序で結合された[css/sorted_style.css](https://github.com/geckotang/concat-css-example/blob/master/css/sorted_style.css)が生成されます。
