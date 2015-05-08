@@ -37,8 +37,43 @@ gulp concat:allCSS
 
 ### css/srcディレクトリ以下のCSSファイルを、gulpfile.js内の指定した順で結合する
 
+gulpfileにあるこの順番で結合します
+
+```js
+var srcSortedCSS = [
+  'css/src/common/_base.css',
+  'css/src/common/_util.css',
+  'css/src/_header.css',
+  'css/src/_footer.css',
+  'css/src/_other.css'
+];
+```
+
 ```sh
 gulp concat:sortedCSS
 ```
 
 これで、指定した順序で結合された[css/sorted_style.css](https://github.com/geckotang/concat-css-example/blob/master/css/sorted_style.css)が生成されます。
+
+### css/srcディレクトリ以下のCSSファイルを、gulpfile.js内の指定した順で結合する（その２）
+
+gulpfileにあるこの順番で結合します
+
+```js
+var srcSortedCSS2 = [
+  'css/src/common/_base.css',
+  'css/src/common/_util.css',
+  'css/src/something/*.css',
+  'css/src/_header.css',
+  'css/src/_footer.css',
+  'css/src/_other.css'
+];
+```
+
+前述と違うのは、`css/src/something`ディレクトリ内は順不同で結合する書き方になっている部分です。
+
+```sh
+gulp concat:sortedCSS2
+```
+
+これで、指定した順序で結合された[css/sorted_style.css](https://github.com/geckotang/concat-css-example/blob/master/css/sorted2_style.css)が生成されます。
