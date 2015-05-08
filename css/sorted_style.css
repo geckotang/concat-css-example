@@ -1,0 +1,38 @@
+@charset 'UTF-8';
+
+body {
+  font-size: 16px;
+  background-color: #fff;
+}
+
+/* 汎用クラス */
+.c-1 {
+  color: red;
+}
+.c-2 {
+  color: green;
+}
+
+/* ヘッダー */
+.header {
+  width: 100%;
+  height: 10px;
+  background-color: tomato;
+}
+
+/* フッター */
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: gray;
+}
+
+/* ヘッダー */
+.toppage .header {
+  background-color: green;
+}
+
+/* フッター */
+.toppage .footer {
+  display: none;
+}

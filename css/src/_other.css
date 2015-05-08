@@ -1,0 +1,9 @@
+/* ヘッダー */
+.toppage .header {
+  background-color: green;
+}
+
+/* フッター */
+.toppage .footer {
+  display: none;
+}
